@@ -72,4 +72,16 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>BILL<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @Test
+    public void returnTotalCost_returns_the_expected_Bill_amount()
+    {
+
+        int returnedBillAmount = restaurant.returnTotalCost("Vegetable lasagne","Sweet corn soup");
+        //expectedBillAmount = 269 + 119 = 388
+        assertEquals(388, returnedBillAmount);
+    }
+    //<<<<<<<<<<<<<<<<<<<<<<<BILL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 }
