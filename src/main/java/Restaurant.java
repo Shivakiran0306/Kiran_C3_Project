@@ -69,6 +69,7 @@ public class Restaurant {
         return name;
     }
 
-
-
+    public int returnTotalBillAmount(String itemName1, String itemName2) {
+        return (findItemByName(itemName1).getPrice() + findItemByName(itemName2).getPrice());
+    }
 }
